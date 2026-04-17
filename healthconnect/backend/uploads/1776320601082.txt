@@ -1,0 +1,119 @@
+Our Proposal 
+
+1. Semantic (AI-based) systems
+
+Understand meaning using vector embeddings.
+
+Accept candidates whose skills match conceptually even if words differ.
+
+
+
+2. BERT
+
+encode experience descriptions
+
+tenure length
+
+role progression
+
+promotion indicators
+
+project scale indicators
+
+predicts:
+
+Impact Score
+
+Career Stability Score
+
+Growth Score
+
+raining strategy:
+
+Fine-tune Sentence-BERT for experience semantic encoding
+
+Train XGBoost on engineered career features
+
+
+Step 2 — Career Trajectory Feature Engineering
+
+From the structured timeline, we compute career intelligence features:
+
+Growth Features
+
+role progression score
+(Engineer → Senior → Lead)
+
+promotion frequency
+
+increase in responsibility keywords
+(led, owned, architected)
+
+Impact Features
+
+systems built detected via NLP
+
+scale indicators
+(millions of users, distributed system, high-traffic etc.)
+
+leadership indicators
+(managed team, decision owner)
+
+Stability Features
+
+tenure length
+
+short-tenure frequency
+
+job-hop risk score
+
+These features become numerical inputs to ML model.
+
+Step 3 — ML Model Training (Career Intelligence Model)
+
+We train a supervised model:
+
+Model Used
+
+Sentence-BERT → encode experience descriptions
+
+Feature vector + embeddings → input
+
+XGBoost / LightGBM → final prediction model
+
+Model learns:
+
+high-impact vs low-impact candidate patterns
+
+stable vs unstable career trajectory
+
+growth vs stagnation career paths
+
+Outputs:
+
+Impact Density Score
+
+Career Growth Score 
+
+Stability Risk Score
+
+
+
+Final Candidate Score = SkillMatchScore + ImpactDensityScore + CareerGrowthScore  − StabilityRiskPenalty
+
+
+
+Existing ATS:
+
+checks whether candidate has Python, Java, SQL
+
+Proposed system:
+
+evaluates how effectively the candidate used those skills across their career
+
+predicts future hiring success probability
+
+
+We convert resume text into structured career trajectories and apply supervised ML models to predict hiring-quality intelligence rather than simple skill similarity.”
+
+

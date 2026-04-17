@@ -1,0 +1,24 @@
+Existing :
+1. Resume screening systems typically extract skills, education, and experience and match them with job descriptions using NLP similarity scoring.
+Paper - https://journal.ijresm.com/index.php/ijresm/article/view/3367/3458
+
+2. Many systems rely on Named Entity Recognition (NER), TF-IDF, SVM, Random Forest, or similarity scoring for candidate ranking.
+paper - https://isjem.com/download/automated-resume-screening-using-nlp-and-machine-learning/
+
+3.Modern pipelines encode resumes and job descriptions into vector embeddings and compute similarity scores to classify “fit / not fit” candidates. 
+
+
+Study:
+1. Studies show that keyword-based screening often causes false rejections because semantic meaning is not fully captured.
+
+Outcome :
+              The study shows that traditional ATS resume filters create hiring inefficiency by rejecting qualified candidates due to wording mismatch, and AI-based semantic matching can significantly reduce this problem.
+Source - https://arxiv.org/abs/2602.04087
+
+
+
+
+Conclusion:
+Existing systems mainly evaluate skill relevance, not career trajectory, impact, or hiring risk intelligence.
+
+
